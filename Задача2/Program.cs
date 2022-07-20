@@ -10,12 +10,12 @@ int n = Convert.ToInt32(Console.ReadLine());
   int SumNumber(int n)
   {
     int counter = Convert.ToString(n).Length;
-    int adv = 0;
+    int a = 0;
     int sum = 0;
     for (int i = 0; i < counter; i++)
     {
-        adv = n - n % 10;
-        sum = sum + (n - adv);
+        a = n - n % 10;   
+        sum = sum + (n - a);
         n = n / 10;
     } 
     
